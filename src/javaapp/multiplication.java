@@ -1,16 +1,19 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
 package javaapp;
-import javax.swing.JFrame;
 
-public class multiplec extends javax.swing.JPanel {
-public static int ans = 0; // Initialize ans to 0
-public static void main(String[] args) {
-        
-    }
+/**
+ *
+ * @author sailo
+ */
+public class multiplication extends javax.swing.JFrame {
+public static int multiSCORE = 0;
     /**
-     * Creates new form NewJPanel
+     * Creates new form multiplication
      */
-    
-    public multiplec() {
+    public multiplication() {
         initComponents();
         buttonGroup1.add(A1);
         buttonGroup1.add(B1);
@@ -32,8 +35,6 @@ public static void main(String[] args) {
         buttonGroup5.add(B5);
         buttonGroup5.add(C5);
         buttonGroup5.add(D5);
-        
-        
     }
 
     /**
@@ -50,6 +51,7 @@ public static void main(String[] args) {
         buttonGroup3 = new javax.swing.ButtonGroup();
         buttonGroup4 = new javax.swing.ButtonGroup();
         buttonGroup5 = new javax.swing.ButtonGroup();
+        jPanel1 = new javax.swing.JPanel();
         B1 = new javax.swing.JRadioButton();
         D5 = new javax.swing.JRadioButton();
         C1 = new javax.swing.JRadioButton();
@@ -80,7 +82,9 @@ public static void main(String[] args) {
         jLabel8 = new javax.swing.JLabel();
         nextbuttonMC = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(251, 240, 229));
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(251, 240, 229));
 
         B1.setText("b) The botanical garden");
 
@@ -167,13 +171,13 @@ public static void main(String[] args) {
             }
         });
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(43, 43, 43)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 724, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -204,9 +208,9 @@ public static void main(String[] args) {
                     .addComponent(D5)
                     .addComponent(nextbuttonMC)))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(6, 6, 6)
@@ -266,6 +270,29 @@ public static void main(String[] args) {
                 .addGap(6, 6, 6)
                 .addComponent(nextbuttonMC))
         );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 767, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 843, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void A3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A3ActionPerformed
@@ -277,20 +304,54 @@ public static void main(String[] args) {
     }//GEN-LAST:event_A1ActionPerformed
 
     private void nextbuttonMCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextbuttonMCActionPerformed
-if (A1.isSelected())
-    ans+=1; // Add 1 instead of "ans =+ ans"
-if (C2.isSelected())
-    ans+=1;
-if (B3.isSelected())
-    ans+=1;
-if (C4.isSelected())
-    ans+=1;
-if (A5.isSelected())
-    ans+=1;
-new resulta().setVisible(true);
-
+        if (A1.isSelected())
+            ++multiSCORE;
+        if (C2.isSelected())
+            ++multiSCORE;
+        if (B3.isSelected())
+            ++multiSCORE;
+        if (C4.isSelected())
+            ++multiSCORE;
+        if (A5.isSelected())
+            ++multiSCORE;
+        new resulta().setVisible(true);
     }//GEN-LAST:event_nextbuttonMCActionPerformed
 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(multiplication.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(multiplication.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(multiplication.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(multiplication.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new multiplication().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton A1;
@@ -326,6 +387,7 @@ new resulta().setVisible(true);
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
     public javax.swing.JButton nextbuttonMC;
     // End of variables declaration//GEN-END:variables
 }

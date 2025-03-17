@@ -69,9 +69,7 @@ public class identification extends javax.swing.JFrame {
         jLabel3.setText("IDENTIFICATION");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
-        idenQ1.setBackground(new java.awt.Color(255, 255, 255));
         idenQ1.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        idenQ1.setForeground(new java.awt.Color(0, 0, 0));
         idenQ1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 idenQ1ActionPerformed(evt);
@@ -84,9 +82,7 @@ public class identification extends javax.swing.JFrame {
         question1.setText("1. Who is the main protagonist in Noli Me Tangere?");
         jPanel1.add(question1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
 
-        idenQ2.setBackground(new java.awt.Color(255, 255, 255));
         idenQ2.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        idenQ2.setForeground(new java.awt.Color(0, 0, 0));
         idenQ2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 idenQ2ActionPerformed(evt);
@@ -99,9 +95,7 @@ public class identification extends javax.swing.JFrame {
         question4.setText("4. Who was Ibarra going to marry?");
         jPanel1.add(question4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
 
-        idenQ3.setBackground(new java.awt.Color(255, 255, 255));
         idenQ3.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        idenQ3.setForeground(new java.awt.Color(0, 0, 0));
         idenQ3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 idenQ3ActionPerformed(evt);
@@ -119,9 +113,7 @@ public class identification extends javax.swing.JFrame {
         question3.setText("3. Who is the fugitive ally of Ibarra in Noli Me Tangere?");
         jPanel1.add(question3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
 
-        idenQ4.setBackground(new java.awt.Color(255, 255, 255));
         idenQ4.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        idenQ4.setForeground(new java.awt.Color(0, 0, 0));
         idenQ4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 idenQ4ActionPerformed(evt);
@@ -134,9 +126,7 @@ public class identification extends javax.swing.JFrame {
         question5.setText("5. Who is the arrogant and power hungry friar in Noli me Tangere?");
         jPanel1.add(question5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, -1, -1));
 
-        idenQ5.setBackground(new java.awt.Color(255, 255, 255));
         idenQ5.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        idenQ5.setForeground(new java.awt.Color(0, 0, 0));
         idenQ5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 idenQ5ActionPerformed(evt);
@@ -194,7 +184,7 @@ public class identification extends javax.swing.JFrame {
         System.out.println(idenSCORE); 
         
         
-        new multiplec().setVisible(true);
+        new multiplication().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_nextbuttonIDENActionPerformed
 
@@ -254,15 +244,15 @@ public class identification extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField idenQ1;
-    private javax.swing.JTextField idenQ2;
-    private javax.swing.JTextField idenQ3;
-    private javax.swing.JTextField idenQ4;
-    private javax.swing.JTextField idenQ5;
+    public static javax.swing.JTextField idenQ1;
+    public static javax.swing.JTextField idenQ2;
+    public static javax.swing.JTextField idenQ3;
+    public static javax.swing.JTextField idenQ4;
+    public static javax.swing.JTextField idenQ5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton nextbuttonIDEN;
+    public javax.swing.JButton nextbuttonIDEN;
     private javax.swing.JLabel question1;
     private javax.swing.JLabel question2;
     private javax.swing.JLabel question3;

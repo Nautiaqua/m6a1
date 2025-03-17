@@ -17,13 +17,14 @@ public void useData() {
      */
     public resulta() {
         initComponents();
-        String stringedSCORE = Integer.toString(identification.idenSCORE);
-        System.out.println("Shared Value: " + stringedSCORE);
-        String stringedSCORE1 = Integer.toString(multiplec.ans);
-        System.out.println("Shared Value: " + stringedSCORE);
+        String stringedSCOREiden = Integer.toString(identification.idenSCORE);
+        System.out.println("Shared Value: " + stringedSCOREiden);
+        String stringedSCOREmulti = Integer.toString(multiplec.ans);
+        System.out.println("Shared Value: " + stringedSCOREmulti);
         
-        NAME1.setText(stringedSCORE1);
-        NAME.setText(stringedSCORE);
+        NAME.setText(stringedSCOREiden);
+        NAME1.setText(stringedSCOREmulti);
+        
     }
     
 
@@ -78,7 +79,8 @@ public void useData() {
                 .addContainerGap(202, Short.MAX_VALUE))
         );
 
-        pack();
+        setSize(new java.awt.Dimension(521, 602));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void NAMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NAMEActionPerformed

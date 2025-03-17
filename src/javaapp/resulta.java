@@ -19,7 +19,7 @@ public void useData() {
         initComponents();
         String stringedSCOREiden = Integer.toString(identification.idenSCORE);
         System.out.println("Shared Value: " + stringedSCOREiden);
-        String stringedSCOREmulti = Integer.toString(multiplec.ans);
+        String stringedSCOREmulti = Integer.toString(multiplication.multiSCORE);
         System.out.println("Shared Value: " + stringedSCOREmulti);
         
         NAME.setText(stringedSCOREiden);

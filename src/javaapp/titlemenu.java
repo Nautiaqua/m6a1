@@ -148,6 +148,8 @@ public class titlemenu extends javax.swing.JFrame {
 
     private void quizbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quizbuttonActionPerformed
         // TODO add your handling code here:
+        new identification().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_quizbuttonActionPerformed
 
     /**

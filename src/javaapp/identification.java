@@ -4,7 +4,6 @@
  */
 package javaapp;
 
-import static javaapp.results.finalscore;
 
 
 /**
@@ -16,7 +15,7 @@ public class identification extends javax.swing.JFrame {
     /**
      * Creates new form identification
      */
-    int idenSCORE = 0;
+    public static int idenSCORE = 0;
     String idenKEY1 = "CRISOSTOMO IBARRA";
     String idenKEY2 = "SIMOUN";
     String idenKEY3 = "ELIAS";
@@ -27,8 +26,9 @@ public class identification extends javax.swing.JFrame {
         initComponents();
         setResizable(false);
         
-        nextbuttonIDEN.setFocusPainted(false);
+        nextbuttonIDEN.setFocusPainted(false);    
     }
+  
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -192,7 +192,7 @@ public class identification extends javax.swing.JFrame {
             ++idenSCORE;
    
         System.out.println(idenSCORE); 
-        new results().setVisible(true);
+        new resulta().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_nextbuttonIDENActionPerformed
 

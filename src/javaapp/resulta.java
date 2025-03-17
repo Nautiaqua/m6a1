@@ -17,6 +17,10 @@ public void useData() {
      */
     public resulta() {
         initComponents();
+        String stringedSCORE = Integer.toString(identification.idenSCORE);
+        System.out.println("Shared Value: " + stringedSCORE);
+    
+        NAME.setText(stringedSCORE);
     }
     
 
@@ -45,26 +49,24 @@ public void useData() {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(74, 74, 74)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(115, Short.MAX_VALUE)
                 .addComponent(NAME, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(155, Short.MAX_VALUE))
+                .addGap(114, 114, 114))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(164, 164, 164)
+                .addGap(241, 241, 241)
                 .addComponent(NAME, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(368, Short.MAX_VALUE))
+                .addContainerGap(291, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void NAMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NAMEActionPerformed
-    System.out.println("Shared Value: " + identification.idenSCORE);
-    
-    NAME.setText(String.valueOf(identification.idenSCORE)); 
+        
     }//GEN-LAST:event_NAMEActionPerformed
 
     /**
@@ -103,6 +105,6 @@ public void useData() {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField NAME;
+    public static javax.swing.JTextField NAME;
     // End of variables declaration//GEN-END:variables
 }

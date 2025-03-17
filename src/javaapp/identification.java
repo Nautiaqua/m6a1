@@ -17,6 +17,8 @@ public class identification extends javax.swing.JFrame {
     public identification() {
         initComponents();
         setResizable(false);
+        
+        nextbuttonIDEN.setFocusPainted(false);
     }
 
     /**
@@ -30,7 +32,28 @@ public class identification extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        idenQ1 = new javax.swing.JTextField();
+        question1 = new javax.swing.JLabel();
+        idenQ2 = new javax.swing.JTextField();
+        question4 = new javax.swing.JLabel();
+        idenQ3 = new javax.swing.JTextField();
+        question2 = new javax.swing.JLabel();
+        question3 = new javax.swing.JLabel();
+        idenQ4 = new javax.swing.JTextField();
+        question5 = new javax.swing.JLabel();
+        idenQ5 = new javax.swing.JTextField();
+        question6 = new javax.swing.JLabel();
+        idenQ6 = new javax.swing.JTextField();
+        question7 = new javax.swing.JLabel();
+        idenQ7 = new javax.swing.JTextField();
+        question8 = new javax.swing.JLabel();
+        idenQ8 = new javax.swing.JTextField();
+        question9 = new javax.swing.JLabel();
+        idenQ9 = new javax.swing.JTextField();
+        question10 = new javax.swing.JLabel();
+        idenQ10 = new javax.swing.JTextField();
+        nextbuttonIDEN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -40,30 +63,225 @@ public class identification extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Ebrima", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(108, 82, 75));
         jLabel1.setText("Your answers are case sensitive, type it in all CAPS.");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 25, -1, 30));
 
-        jLabel2.setFont(new java.awt.Font("Ebrima", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(108, 82, 75));
-        jLabel2.setText("IDENTIFICATION");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        jLabel3.setFont(new java.awt.Font("Ebrima", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(108, 82, 75));
+        jLabel3.setText("IDENTIFICATION");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+
+        idenQ1.setBackground(new java.awt.Color(255, 255, 255));
+        idenQ1.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
+        idenQ1.setForeground(new java.awt.Color(0, 0, 0));
+        idenQ1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idenQ1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(idenQ1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 340, -1));
+
+        question1.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        question1.setForeground(new java.awt.Color(108, 82, 75));
+        question1.setText("1. Who is the main protagonist in Noli Me Tangere?");
+        jPanel1.add(question1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+
+        idenQ2.setBackground(new java.awt.Color(255, 255, 255));
+        idenQ2.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
+        idenQ2.setForeground(new java.awt.Color(0, 0, 0));
+        idenQ2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idenQ2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(idenQ2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 340, -1));
+
+        question4.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        question4.setForeground(new java.awt.Color(108, 82, 75));
+        question4.setText("4. Who is Simoun?");
+        jPanel1.add(question4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
+
+        idenQ3.setBackground(new java.awt.Color(255, 255, 255));
+        idenQ3.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
+        idenQ3.setForeground(new java.awt.Color(0, 0, 0));
+        idenQ3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idenQ3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(idenQ3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 340, -1));
+
+        question2.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        question2.setForeground(new java.awt.Color(108, 82, 75));
+        question2.setText("2. Which character is a wealthy yet mysterious jeweler in El Filibusterismo?");
+        jPanel1.add(question2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
+
+        question3.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        question3.setForeground(new java.awt.Color(108, 82, 75));
+        question3.setText("3. Who is the fugitive ally of Ibarra in Noli Me Tangere?");
+        jPanel1.add(question3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
+
+        idenQ4.setBackground(new java.awt.Color(255, 255, 255));
+        idenQ4.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
+        idenQ4.setForeground(new java.awt.Color(0, 0, 0));
+        idenQ4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idenQ4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(idenQ4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 340, -1));
+
+        question5.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        question5.setForeground(new java.awt.Color(108, 82, 75));
+        question5.setText("5. Who is the arrogant and power hungry friar in Noli me Tangere?");
+        jPanel1.add(question5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, -1, -1));
+
+        idenQ5.setBackground(new java.awt.Color(255, 255, 255));
+        idenQ5.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
+        idenQ5.setForeground(new java.awt.Color(0, 0, 0));
+        idenQ5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idenQ5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(idenQ5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 340, -1));
+
+        question6.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        question6.setForeground(new java.awt.Color(108, 82, 75));
+        question6.setText("6. What does Maria Clara choose to become later on?");
+        jPanel1.add(question6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, -1, -1));
+
+        idenQ6.setBackground(new java.awt.Color(255, 255, 255));
+        idenQ6.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
+        idenQ6.setForeground(new java.awt.Color(0, 0, 0));
+        idenQ6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idenQ6ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(idenQ6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 340, -1));
+
+        question7.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        question7.setForeground(new java.awt.Color(108, 82, 75));
+        question7.setText("7. What was Simoun's gift to the newlyweds?");
+        jPanel1.add(question7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, -1, -1));
+
+        idenQ7.setBackground(new java.awt.Color(255, 255, 255));
+        idenQ7.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
+        idenQ7.setForeground(new java.awt.Color(0, 0, 0));
+        idenQ7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idenQ7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(idenQ7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 340, -1));
+
+        question8.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        question8.setForeground(new java.awt.Color(108, 82, 75));
+        question8.setText("8. Who is the adoptive father of Maria Clara?");
+        jPanel1.add(question8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, -1, -1));
+
+        idenQ8.setBackground(new java.awt.Color(255, 255, 255));
+        idenQ8.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
+        idenQ8.setForeground(new java.awt.Color(0, 0, 0));
+        idenQ8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idenQ8ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(idenQ8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 340, -1));
+
+        question9.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        question9.setForeground(new java.awt.Color(108, 82, 75));
+        question9.setText("9. Who is the mother of Crispin and Basilio?");
+        jPanel1.add(question9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 540, -1, -1));
+
+        idenQ9.setBackground(new java.awt.Color(255, 255, 255));
+        idenQ9.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
+        idenQ9.setForeground(new java.awt.Color(0, 0, 0));
+        idenQ9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idenQ9ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(idenQ9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 560, 340, -1));
+
+        question10.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        question10.setForeground(new java.awt.Color(108, 82, 75));
+        question10.setText("10. How did Simoun die? (ONE WORD)");
+        jPanel1.add(question10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, -1, -1));
+
+        idenQ10.setBackground(new java.awt.Color(255, 255, 255));
+        idenQ10.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
+        idenQ10.setForeground(new java.awt.Color(0, 0, 0));
+        idenQ10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idenQ10ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(idenQ10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 340, -1));
+
+        nextbuttonIDEN.setBackground(new java.awt.Color(108, 82, 75));
+        nextbuttonIDEN.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
+        nextbuttonIDEN.setText("NEXT");
+        jPanel1.add(nextbuttonIDEN, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 660, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 555, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 536, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 702, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 742, Short.MAX_VALUE)
         );
 
         jPanel1.getAccessibleContext().setAccessibleName("");
         jPanel1.getAccessibleContext().setAccessibleDescription("");
 
-        setSize(new java.awt.Dimension(571, 711));
+        setSize(new java.awt.Dimension(552, 751));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void idenQ1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idenQ1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idenQ1ActionPerformed
+
+    private void idenQ2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idenQ2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idenQ2ActionPerformed
+
+    private void idenQ3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idenQ3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idenQ3ActionPerformed
+
+    private void idenQ4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idenQ4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idenQ4ActionPerformed
+
+    private void idenQ5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idenQ5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idenQ5ActionPerformed
+
+    private void idenQ6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idenQ6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idenQ6ActionPerformed
+
+    private void idenQ7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idenQ7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idenQ7ActionPerformed
+
+    private void idenQ8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idenQ8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idenQ8ActionPerformed
+
+    private void idenQ9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idenQ9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idenQ9ActionPerformed
+
+    private void idenQ10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idenQ10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idenQ10ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -101,8 +319,29 @@ public class identification extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField idenQ1;
+    private javax.swing.JTextField idenQ10;
+    private javax.swing.JTextField idenQ2;
+    private javax.swing.JTextField idenQ3;
+    private javax.swing.JTextField idenQ4;
+    private javax.swing.JTextField idenQ5;
+    private javax.swing.JTextField idenQ6;
+    private javax.swing.JTextField idenQ7;
+    private javax.swing.JTextField idenQ8;
+    private javax.swing.JTextField idenQ9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton nextbuttonIDEN;
+    private javax.swing.JLabel question1;
+    private javax.swing.JLabel question10;
+    private javax.swing.JLabel question2;
+    private javax.swing.JLabel question3;
+    private javax.swing.JLabel question4;
+    private javax.swing.JLabel question5;
+    private javax.swing.JLabel question6;
+    private javax.swing.JLabel question7;
+    private javax.swing.JLabel question8;
+    private javax.swing.JLabel question9;
     // End of variables declaration//GEN-END:variables
 }

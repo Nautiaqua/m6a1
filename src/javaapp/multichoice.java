@@ -8,12 +8,12 @@ package javaapp;
  *
  * @author sailo
  */
-public class multiplication extends javax.swing.JFrame {
+public class multichoice extends javax.swing.JFrame {
 public static int multiSCORE = 0;
     /**
      * Creates new form multiplication
      */
-    public multiplication() {
+    public multichoice() {
         initComponents();
         buttonGroup1.add(A1);
         buttonGroup1.add(B1);
@@ -88,78 +88,82 @@ public static int multiSCORE = 0;
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         B1.setText("b) The botanical garden");
-        jPanel1.add(B1, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 172, -1, -1));
+        jPanel1.add(B1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
 
         D5.setText("d) It represented the eternal suffering of the Filipino people");
-        jPanel1.add(D5, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 758, -1, -1));
+        jPanel1.add(D5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 700, -1, -1));
 
         C1.setText("c) The lamp of Maria Clara");
-        jPanel1.add(C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 199, -1, -1));
+        jPanel1.add(C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
 
         A5.setText("a) It symbolized the broken justice system of the Philippines");
-        jPanel1.add(A5, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 677, -1, -1));
+        jPanel1.add(A5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 640, -1, -1));
 
         D1.setText("d) The schoolhouse in San Diego");
-        jPanel1.add(D1, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 226, -1, -1));
+        jPanel1.add(D1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(108, 82, 75));
         jLabel4.setText("2. Why did Padre Salvi secretly despise Padre Damaso?");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 253, 417, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 417, -1));
 
         B2.setText("b) Salvi believed he should have been assigned to a higher position");
-        jPanel1.add(B2, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 305, -1, -1));
+        jPanel1.add(B2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
 
         C2.setText("c) Salvi was jealous of Damaso’s past relationship with Maria Clara’s mother");
-        jPanel1.add(C2, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 332, -1, -1));
+        jPanel1.add(C2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
 
         D2.setText("d) Salvi saw Damaso as a threat to his own control over San Diego");
-        jPanel1.add(D2, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 359, -1, -1));
+        jPanel1.add(D2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
 
         A2.setText("a) Damaso was wealthier and more influential");
-        jPanel1.add(A2, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 278, -1, -1));
+        jPanel1.add(A2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
 
         B3.setText("b) The suffering of Filipino mothers under colonial rule");
-        jPanel1.add(B3, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 438, -1, -1));
+        jPanel1.add(B3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, -1, -1));
 
         C3.setText("c) The indifference of the Spanish government towards education");
-        jPanel1.add(C3, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 465, -1, -1));
+        jPanel1.add(C3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, -1, -1));
 
         D3.setText("d) The fragility of the elite class in times of crisis");
-        jPanel1.add(D3, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 492, -1, -1));
+        jPanel1.add(D3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(108, 82, 75));
         jLabel5.setText("4. Why did Elias refuse Crisostomo Ibarra’s offer to help him escape and start a new life?");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 519, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Ebrima", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(108, 82, 75));
         jLabel1.setText("MULTIPLE CHOICES");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 27, 200, 25));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 200, 25));
 
         jLabel6.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(108, 82, 75));
         jLabel6.setText("3. What does Sisa’s descent into madness symbolize in the novel?");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 386, 442, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 442, -1));
 
         jLabel2.setFont(new java.awt.Font("Ebrima", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(108, 82, 75));
         jLabel2.setText("Multiple Choices");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 58, 200, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 200, -1));
 
         B4.setText("b) He wanted to die for the revolution");
-        jPanel1.add(B4, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 571, -1, -1));
+        jPanel1.add(B4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, -1, -1));
 
         C4.setText("c) He believed his bloodline was cursed and unworthy of a future");
-        jPanel1.add(C4, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 598, -1, -1));
+        jPanel1.add(C4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(108, 82, 75));
         jLabel3.setText("1. Which symbol in Noli Me Tangere represents the oppression and suffering of the Filipino");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 95, 724, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 724, -1));
 
         D4.setText("d) He feared he would betray Ibarra under torture");
-        jPanel1.add(D4, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 625, -1, -1));
+        jPanel1.add(D4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, -1, -1));
 
         A4.setText("a) He no longer believed in Ibarra’s cause");
-        jPanel1.add(A4, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 544, -1, -1));
+        jPanel1.add(A4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, -1, -1));
 
         A3.setText("a) The spiritual corruption of the clergy");
         A3.addActionListener(new java.awt.event.ActionListener() {
@@ -167,14 +171,15 @@ public static int multiSCORE = 0;
                 A3ActionPerformed(evt);
             }
         });
-        jPanel1.add(A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 411, -1, -1));
+        jPanel1.add(A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(108, 82, 75));
         jLabel7.setText("5. What was the significance of the grave Ibarra visited at the beginning of the novel?");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 652, 577, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, 577, -1));
 
         B5.setText("b) It foreshadowed Ibarra’s eventual fate as an outcast");
-        jPanel1.add(B5, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 704, -1, -1));
+        jPanel1.add(B5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 660, -1, -1));
 
         A1.setText("a) The crocodile in the river");
         A1.addActionListener(new java.awt.event.ActionListener() {
@@ -182,14 +187,15 @@ public static int multiSCORE = 0;
                 A1ActionPerformed(evt);
             }
         });
-        jPanel1.add(A1, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 145, -1, -1));
+        jPanel1.add(A1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
         C5.setText("c) It was a secret burial ground for those executed by the church");
-        jPanel1.add(C5, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 731, -1, -1));
+        jPanel1.add(C5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 680, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(108, 82, 75));
         jLabel8.setText("people under Spanish rule?");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 120, 724, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 724, -1));
 
         nextbuttonMC.setBackground(new java.awt.Color(108, 82, 75));
         nextbuttonMC.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
@@ -199,21 +205,17 @@ public static int multiSCORE = 0;
                 nextbuttonMCActionPerformed(evt);
             }
         });
-        jPanel1.add(nextbuttonMC, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 785, -1, -1));
+        jPanel1.add(nextbuttonMC, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 740, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 773, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 675, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 837, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 796, Short.MAX_VALUE)
         );
 
         pack();
@@ -258,21 +260,23 @@ public static int multiSCORE = 0;
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(multiplication.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(multichoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(multiplication.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(multichoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(multiplication.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(multichoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(multiplication.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(multichoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new multiplication().setVisible(true);
+                new multichoice().setVisible(true);
             }
         });
     }

@@ -194,7 +194,7 @@ public class identification extends javax.swing.JFrame {
         System.out.println(idenSCORE); 
         
         
-        new resulta().setVisible(true);
+        new multiplec().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_nextbuttonIDENActionPerformed
 

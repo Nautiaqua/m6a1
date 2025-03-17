@@ -19,7 +19,10 @@ public void useData() {
         initComponents();
         String stringedSCORE = Integer.toString(identification.idenSCORE);
         System.out.println("Shared Value: " + stringedSCORE);
-    
+        String stringedSCORE1 = Integer.toString(multiplec.ans);
+        System.out.println("Shared Value: " + stringedSCORE);
+        
+        NAME1.setText(stringedSCORE1);
         NAME.setText(stringedSCORE);
     }
     
@@ -34,6 +37,7 @@ public void useData() {
     private void initComponents() {
 
         NAME = new javax.swing.JTextField();
+        NAME1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,21 +49,33 @@ public void useData() {
             }
         });
 
+        NAME1.setEditable(false);
+        NAME1.setText("0");
+        NAME1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NAME1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(115, Short.MAX_VALUE)
-                .addComponent(NAME, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(114, 114, 114))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(114, 114, 114)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(NAME, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NAME1, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(115, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(241, 241, 241)
+                .addGap(159, 159, 159)
                 .addComponent(NAME, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(291, Short.MAX_VALUE))
+                .addGap(110, 110, 110)
+                .addComponent(NAME1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(202, Short.MAX_VALUE))
         );
 
         pack();
@@ -68,6 +84,10 @@ public void useData() {
     private void NAMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NAMEActionPerformed
         
     }//GEN-LAST:event_NAMEActionPerformed
+
+    private void NAME1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NAME1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NAME1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -106,5 +126,6 @@ public void useData() {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JTextField NAME;
+    public static javax.swing.JTextField NAME1;
     // End of variables declaration//GEN-END:variables
 }

@@ -37,7 +37,7 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
         buttonGroup5.add(D5);
         
         if (multichoice.Q1correct == false) { // A
-            correctANS1.setText("Correct Answer");
+            correctANS1.setText("CORRECT ANSWER");
         } else if (multichoice.Q1correct == true) {
             correctshower1.setText("CORRECT");
             A1.setSelected(true);
@@ -51,7 +51,7 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
         }
             
         if (multichoice.Q2correct == false) { // C
-            correctANS2.setText("Correct Answer");
+            correctANS2.setText("CORRECT ANSWER");
         } else if (multichoice.Q2correct == true) {
             correctshower2.setText("CORRECT");
             C2.setSelected(true);
@@ -65,7 +65,7 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
         }
         
         if (multichoice.Q3correct == false) { // B
-            correctANS3.setText("Correct Answer");
+            correctANS3.setText("CORRECT ANSWER");
         } else if (multichoice.Q3correct == true) {
             correctshower3.setText("CORRECT");
             B3.setSelected(true);
@@ -79,7 +79,7 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
         }
         
         if (multichoice.Q4correct == false) { // C
-            correctANS4.setText("Correct Answer");
+            correctANS4.setText("CORRECT ANSWER");
         } else if (multichoice.Q4correct == true) {
             correctshower4.setText("CORRECT");
             C4.setSelected(true);
@@ -93,7 +93,7 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
         }
         
         if (multichoice.Q5correct == false) { // A
-            correctANS5.setText("Correct Answer");
+            correctANS5.setText("CORRECT ANSWER");
         } else if (multichoice.Q5correct == true) {
             correctshower5.setText("CORRECT");
             A5.setSelected(true);

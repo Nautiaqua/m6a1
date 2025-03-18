@@ -20,14 +20,14 @@ public static int TFSCORE = 0;
         setResizable(false);
         buttonGroup1.add(T1);
         buttonGroup1.add(F1);
-        buttonGroup1.add(T2);
-        buttonGroup1.add(F2);
-        buttonGroup2.add(T3);
-        buttonGroup2.add(F3);
-        buttonGroup2.add(T4);
-        buttonGroup2.add(F4); 
-        buttonGroup2.add(T5); 
-        buttonGroup2.add(F5); 
+        buttonGroup2.add(T2);
+        buttonGroup2.add(F2);
+        buttonGroup3.add(T3);
+        buttonGroup3.add(F3);
+        buttonGroup4.add(T4);
+        buttonGroup4.add(F4); 
+        buttonGroup5.add(T5); 
+        buttonGroup5.add(F5); 
 
     }
 

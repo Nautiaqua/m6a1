@@ -19,11 +19,21 @@ public void useData() {
         initComponents();
         String stringedSCOREiden = Integer.toString(identification.idenSCORE);
         System.out.println("Shared Value: " + stringedSCOREiden);
+        
         String stringedSCOREmulti = Integer.toString(multichoice.multiSCORE);
         System.out.println("Shared Value: " + stringedSCOREmulti);
         
-        NAME.setText(stringedSCOREiden);
-        NAME1.setText(stringedSCOREmulti);
+        String stringedSCOREboolean = Integer.toString(trueorfalse.TFSCORE);
+        
+        int FINALITY = identification.idenSCORE + multichoice.multiSCORE + trueorfalse.TFSCORE;
+        String stringedSCOREfinal = Integer.toString(FINALITY);
+        
+        idenTOTAL.setText(stringedSCOREiden);
+        multiTOTAL.setText(stringedSCOREmulti);
+        trueorfalseTOTAL.setText(stringedSCOREboolean);
+        TOTALITYFINAL.setText(stringedSCOREfinal);
+        
+        // trueorfalseTOTAL.set
         
     }
     
@@ -37,59 +47,165 @@ public void useData() {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        NAME = new javax.swing.JTextField();
-        NAME1 = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        trueorfalseTOTAL = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        idenTOTAL = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        multiTOTAL = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        TOTALITYFINAL = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        NAME.setEditable(false);
-        NAME.setText("0");
-        NAME.addActionListener(new java.awt.event.ActionListener() {
+        jPanel2.setBackground(new java.awt.Color(251, 240, 229));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel3.setBackground(new java.awt.Color(148, 114, 97));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        trueorfalseTOTAL.setEditable(false);
+        trueorfalseTOTAL.setText("0");
+        trueorfalseTOTAL.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NAMEActionPerformed(evt);
+                trueorfalseTOTALActionPerformed(evt);
             }
         });
+        jPanel3.add(trueorfalseTOTAL, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 110, -1));
 
-        NAME1.setEditable(false);
-        NAME1.setText("0");
-        NAME1.addActionListener(new java.awt.event.ActionListener() {
+        jLabel7.setBackground(new java.awt.Color(251, 240, 229));
+        jLabel7.setFont(new java.awt.Font("Ebrima", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(251, 240, 229));
+        jLabel7.setText("TRUE OR FALSE");
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jLabel8.setBackground(new java.awt.Color(251, 240, 229));
+        jLabel8.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(251, 240, 229));
+        jLabel8.setText("SCORE");
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 151, -1));
+
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 210, 539));
+
+        jPanel4.setBackground(new java.awt.Color(108, 82, 75));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        idenTOTAL.setEditable(false);
+        idenTOTAL.setText("0");
+        idenTOTAL.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NAME1ActionPerformed(evt);
+                idenTOTALActionPerformed(evt);
             }
         });
+        jPanel4.add(idenTOTAL, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 110, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(114, 114, 114)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(NAME, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NAME1, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(115, Short.MAX_VALUE))
+        jLabel4.setBackground(new java.awt.Color(251, 240, 229));
+        jLabel4.setFont(new java.awt.Font("Ebrima", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(251, 240, 229));
+        jLabel4.setText("IDENTIFICATION");
+        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 151, -1));
+
+        jLabel5.setBackground(new java.awt.Color(251, 240, 229));
+        jLabel5.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(251, 240, 229));
+        jLabel5.setText("SCORE");
+        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 151, -1));
+
+        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 539));
+
+        jPanel5.setBackground(new java.awt.Color(121, 94, 82));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        multiTOTAL.setEditable(false);
+        multiTOTAL.setText("0");
+        multiTOTAL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                multiTOTALActionPerformed(evt);
+            }
+        });
+        jPanel5.add(multiTOTAL, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 109, -1));
+
+        jLabel2.setBackground(new java.awt.Color(251, 240, 229));
+        jLabel2.setFont(new java.awt.Font("Ebrima", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(251, 240, 229));
+        jLabel2.setText("MULTIPLE CHOICE");
+        jPanel5.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jLabel6.setBackground(new java.awt.Color(251, 240, 229));
+        jLabel6.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(251, 240, 229));
+        jLabel6.setText("SCORE");
+        jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 151, -1));
+
+        jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 210, 539));
+
+        TOTALITYFINAL.setEditable(false);
+        TOTALITYFINAL.setText("0");
+        TOTALITYFINAL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TOTALITYFINALActionPerformed(evt);
+            }
+        });
+        jPanel2.add(TOTALITYFINAL, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 70, 110, -1));
+
+        jLabel3.setBackground(new java.awt.Color(108, 82, 75));
+        jLabel3.setFont(new java.awt.Font("Ebrima", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(108, 82, 75));
+        jLabel3.setText("TOTAL");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 10, -1, -1));
+
+        jLabel1.setBackground(new java.awt.Color(251, 240, 229));
+        jLabel1.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(108, 82, 75));
+        jLabel1.setText("SCORE");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 50, 151, -1));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 832, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 61, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(159, 159, 159)
-                .addComponent(NAME, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(110, 110, 110)
-                .addComponent(NAME1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(202, Short.MAX_VALUE))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 549, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        setSize(new java.awt.Dimension(521, 602));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        setSize(new java.awt.Dimension(853, 309));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void NAMEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NAMEActionPerformed
-        
-    }//GEN-LAST:event_NAMEActionPerformed
-
-    private void NAME1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NAME1ActionPerformed
+    private void idenTOTALActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idenTOTALActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NAME1ActionPerformed
+    }//GEN-LAST:event_idenTOTALActionPerformed
+
+    private void multiTOTALActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multiTOTALActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_multiTOTALActionPerformed
+
+    private void trueorfalseTOTALActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_trueorfalseTOTALActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_trueorfalseTOTALActionPerformed
+
+    private void TOTALITYFINALActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TOTALITYFINALActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TOTALITYFINALActionPerformed
 
     /**
      * @param args the command line arguments
@@ -127,7 +243,22 @@ public void useData() {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public static javax.swing.JTextField NAME;
-    public static javax.swing.JTextField NAME1;
+    public static javax.swing.JTextField TOTALITYFINAL;
+    public static javax.swing.JTextField idenTOTAL;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    public static javax.swing.JTextField multiTOTAL;
+    public static javax.swing.JTextField trueorfalseTOTAL;
     // End of variables declaration//GEN-END:variables
 }

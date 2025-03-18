@@ -138,7 +138,7 @@ public class titlemenu extends javax.swing.JFrame {
                 quizbuttonActionPerformed(evt);
             }
         });
-        jPanel4.add(quizbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, -1, -1));
+        jPanel4.add(quizbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 240, -1));
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 0, 460, 491));
 

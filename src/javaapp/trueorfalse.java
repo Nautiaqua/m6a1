@@ -11,6 +11,8 @@ package javaapp;
  */
 public class trueorfalse extends javax.swing.JFrame {
 public static int TFSCORE = 0;
+public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q4correct = false, Q5correct = false;
+public static boolean F1s = false, F2s = false, T3s = false, T4s = false, F5s = false;
 
     /**
      * Creates new form TRUEFALSENOLIANDELFILI
@@ -161,17 +163,27 @@ public static int TFSCORE = 0;
     }// </editor-fold>//GEN-END:initComponents
 
     private void NEXTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NEXTActionPerformed
-        if (T1.isSelected())
+        if (T1.isSelected()) {
             ++TFSCORE;
-        if (T2.isSelected())
+            Q1correct = true;
+        }
+        if (T2.isSelected()) {
             ++TFSCORE;
-        if (F3.isSelected())
+            Q2correct = true;
+        }
+        if (F3.isSelected()) {
             ++TFSCORE;
-        if (F4.isSelected())
+            Q3correct = true;
+        }
+        if (F4.isSelected()) {
             ++TFSCORE;
-        if (T5.isSelected())
+            Q4correct = true;
+        }
+        if (T5.isSelected()) {
             ++TFSCORE;
-        new resulta().setVisible(true);
+            Q5correct = true;
+        }
+        new trueorfalseANSWERS().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_NEXTActionPerformed
 

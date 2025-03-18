@@ -10,6 +10,7 @@ package javaapp;
  */
 public class multichoice extends javax.swing.JFrame {
 public static int multiSCORE = 0;
+public static boolean Q1correct = false;
     /**
      * Creates new form multiplication
      */
@@ -234,8 +235,10 @@ public static int multiSCORE = 0;
     }//GEN-LAST:event_A1ActionPerformed
 
     private void nextbuttonMCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextbuttonMCActionPerformed
-        if (A1.isSelected())
+        if (A1.isSelected()) {
             ++multiSCORE;
+            Q1correct = true;
+        }
         if (C2.isSelected())
             ++multiSCORE;
         if (B3.isSelected())

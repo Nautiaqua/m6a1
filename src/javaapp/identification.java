@@ -183,7 +183,13 @@ public class identification extends javax.swing.JFrame {
    
         System.out.println(idenSCORE); 
            
-        new multichoice().setVisible(true);
+        correctidentification objA = new correctidentification();
+        objA.setVisible(true);
+        objA.NEIL1.setText(this.idenQ1.getText());
+        objA.NEIL2.setText(this.idenQ2.getText());
+        objA.NEIL3.setText(this.idenQ3.getText());
+        objA.NEIL4.setText(this.idenQ4.getText());
+        objA.NEIL5.setText(this.idenQ5.getText());
         this.dispose();
     }//GEN-LAST:event_nextbuttonIDENActionPerformed
 

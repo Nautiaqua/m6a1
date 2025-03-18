@@ -10,12 +10,24 @@ package javaapp;
  * @author Christopher
  */
 public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
+public static int TFSCORE = 0;
 
     /**
      * Creates new form TRUEFALSENOLIANDELFILI
      */
     public TRUEFALSENOLIANDELFILI() {
         initComponents();
+        buttonGroup1.add(T1);
+        buttonGroup1.add(F1);
+        buttonGroup1.add(T2);
+        buttonGroup1.add(F2);
+        buttonGroup2.add(T3);
+        buttonGroup2.add(F3);
+        buttonGroup2.add(T4);
+        buttonGroup2.add(F4); 
+        buttonGroup2.add(T5); 
+        buttonGroup2.add(F5); 
+
     }
 
     /**
@@ -34,24 +46,24 @@ public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
         buttonGroup5 = new javax.swing.ButtonGroup();
         jLabel2 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
+        T1 = new javax.swing.JRadioButton();
+        F1 = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
+        T2 = new javax.swing.JRadioButton();
+        F2 = new javax.swing.JRadioButton();
         jLabel5 = new javax.swing.JLabel();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jRadioButton6 = new javax.swing.JRadioButton();
+        T3 = new javax.swing.JRadioButton();
+        F3 = new javax.swing.JRadioButton();
         jLabel6 = new javax.swing.JLabel();
-        jRadioButton7 = new javax.swing.JRadioButton();
-        jRadioButton8 = new javax.swing.JRadioButton();
+        T4 = new javax.swing.JRadioButton();
+        F4 = new javax.swing.JRadioButton();
         jLabel7 = new javax.swing.JLabel();
-        jRadioButton9 = new javax.swing.JRadioButton();
-        jRadioButton10 = new javax.swing.JRadioButton();
+        T5 = new javax.swing.JRadioButton();
+        F5 = new javax.swing.JRadioButton();
         jLabel8 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        NEXT = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -59,9 +71,9 @@ public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(251, 240, 229));
 
-        jRadioButton1.setText("TRUE");
+        T1.setText("TRUE");
 
-        jRadioButton2.setText("FALSE");
+        F1.setText("FALSE");
 
         jLabel1.setFont(new java.awt.Font("Ebrima", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(108, 82, 75));
@@ -73,35 +85,40 @@ public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel4.setText("1. José Rizal wrote Noli Me Tangere and El Filibusterismo. ");
 
-        jRadioButton3.setText("TRUE");
+        T2.setText("TRUE");
 
-        jRadioButton4.setText("FALSE");
+        F2.setText("FALSE");
 
         jLabel5.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel5.setText("2. Crisostomo Ibarra is the main character in El Filibusterismo. ");
 
-        jRadioButton5.setText("TRUE");
+        T3.setText("TRUE");
 
-        jRadioButton6.setText("FALSE");
+        F3.setText("FALSE");
 
         jLabel6.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel6.setText("3. El Filibusterismo was written before Noli Me Tangere. ");
 
-        jRadioButton7.setText("TRUE");
+        T4.setText("TRUE");
 
-        jRadioButton8.setText("FALSE");
+        F4.setText("FALSE");
 
         jLabel7.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel7.setText("4. Maria Clara is Crisostomo Ibarra's mother. ");
 
-        jRadioButton9.setText("TRUE");
+        T5.setText("TRUE");
 
-        jRadioButton10.setText("FALSE");
+        F5.setText("FALSE");
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel8.setText("5. Both Noli Me Tangere and El Filibusterismo talk about the Spanish colonization in the Philippines. ");
 
-        jButton1.setText("NEXT");
+        NEXT.setText("NEXT");
+        NEXT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NEXTActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -113,40 +130,40 @@ public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(T1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(F1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addComponent(jRadioButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(T2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addComponent(jRadioButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(F2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addComponent(jRadioButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(T3, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addComponent(jRadioButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(F3, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addComponent(jRadioButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(T4, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addComponent(jRadioButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(F4, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addComponent(jRadioButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(T5, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addComponent(jRadioButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(F5, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(222, 222, 222)
-                        .addComponent(jButton1))
+                        .addComponent(NEXT))
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 392, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 611, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
@@ -165,35 +182,35 @@ public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addComponent(jLabel4)
                 .addGap(6, 6, 6)
-                .addComponent(jRadioButton1)
+                .addComponent(T1)
                 .addGap(6, 6, 6)
-                .addComponent(jRadioButton2)
+                .addComponent(F1)
                 .addGap(12, 12, 12)
                 .addComponent(jLabel5)
                 .addGap(6, 6, 6)
-                .addComponent(jRadioButton3)
+                .addComponent(T2)
                 .addGap(6, 6, 6)
-                .addComponent(jRadioButton4)
+                .addComponent(F2)
                 .addGap(6, 6, 6)
                 .addComponent(jLabel6)
                 .addGap(6, 6, 6)
-                .addComponent(jRadioButton5)
+                .addComponent(T3)
                 .addGap(6, 6, 6)
-                .addComponent(jRadioButton6)
+                .addComponent(F3)
                 .addGap(6, 6, 6)
                 .addComponent(jLabel7)
                 .addGap(6, 6, 6)
-                .addComponent(jRadioButton7)
+                .addComponent(T4)
                 .addGap(6, 6, 6)
-                .addComponent(jRadioButton8)
+                .addComponent(F4)
                 .addGap(6, 6, 6)
                 .addComponent(jLabel8)
                 .addGap(6, 6, 6)
-                .addComponent(jRadioButton9)
+                .addComponent(T5)
                 .addGap(6, 6, 6)
-                .addComponent(jRadioButton10)
+                .addComponent(F5)
                 .addGap(107, 107, 107)
-                .addComponent(jButton1)
+                .addComponent(NEXT)
                 .addContainerGap(26, Short.MAX_VALUE))
         );
 
@@ -201,6 +218,20 @@ public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void NEXTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NEXTActionPerformed
+        if (T1.isSelected())
+            ++TFSCORE;
+        if (T2.isSelected())
+            ++TFSCORE;
+        if (F3.isSelected())
+            ++TFSCORE;
+        if (F4.isSelected())
+            ++TFSCORE;
+        if (T5.isSelected())
+            ++TFSCORE;
+        new resulta().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_NEXTActionPerformed
 
     /**
      * @param args the command line arguments
@@ -238,12 +269,22 @@ public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton F1;
+    private javax.swing.JRadioButton F2;
+    private javax.swing.JRadioButton F3;
+    private javax.swing.JRadioButton F4;
+    private javax.swing.JRadioButton F5;
+    private javax.swing.JButton NEXT;
+    private javax.swing.JRadioButton T1;
+    private javax.swing.JRadioButton T2;
+    private javax.swing.JRadioButton T3;
+    private javax.swing.JRadioButton T4;
+    private javax.swing.JRadioButton T5;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.ButtonGroup buttonGroup4;
     private javax.swing.ButtonGroup buttonGroup5;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -253,15 +294,5 @@ public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton10;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
-    private javax.swing.JRadioButton jRadioButton7;
-    private javax.swing.JRadioButton jRadioButton8;
-    private javax.swing.JRadioButton jRadioButton9;
     // End of variables declaration//GEN-END:variables
 }

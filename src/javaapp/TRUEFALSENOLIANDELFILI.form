@@ -65,50 +65,50 @@
                       <Component id="jLabel4" min="-2" pref="446" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
-                          <Component id="jRadioButton1" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Component id="T1" min="-2" pref="98" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
-                          <Component id="jRadioButton2" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Component id="F1" min="-2" pref="98" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jLabel5" min="-2" pref="446" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
-                          <Component id="jRadioButton3" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Component id="T2" min="-2" pref="98" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
-                          <Component id="jRadioButton4" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Component id="F2" min="-2" pref="98" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jLabel6" min="-2" pref="446" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
-                          <Component id="jRadioButton5" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Component id="T3" min="-2" pref="98" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
-                          <Component id="jRadioButton6" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Component id="F3" min="-2" pref="98" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jLabel7" min="-2" pref="446" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
-                          <Component id="jRadioButton7" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Component id="T4" min="-2" pref="98" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
-                          <Component id="jRadioButton8" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Component id="F4" min="-2" pref="98" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
-                          <Component id="jRadioButton9" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Component id="T5" min="-2" pref="98" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
-                          <Component id="jRadioButton10" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Component id="F5" min="-2" pref="98" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="222" pref="222" max="-2" attributes="0"/>
-                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                          <Component id="NEXT" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jLabel3" alignment="0" min="-2" pref="392" max="-2" attributes="0"/>
                       <Component id="jLabel8" min="-2" pref="611" max="-2" attributes="0"/>
@@ -132,47 +132,47 @@
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                   <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="T1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                  <Component id="F1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
+                  <Component id="T2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="jRadioButton4" min="-2" max="-2" attributes="0"/>
+                  <Component id="F2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                   <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="jRadioButton5" min="-2" max="-2" attributes="0"/>
+                  <Component id="T3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="jRadioButton6" min="-2" max="-2" attributes="0"/>
+                  <Component id="F3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="jRadioButton7" min="-2" max="-2" attributes="0"/>
+                  <Component id="T4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="jRadioButton8" min="-2" max="-2" attributes="0"/>
+                  <Component id="F4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                   <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="jRadioButton9" min="-2" max="-2" attributes="0"/>
+                  <Component id="T5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="jRadioButton10" min="-2" max="-2" attributes="0"/>
+                  <Component id="F5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="107" pref="107" max="-2" attributes="0"/>
-                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="NEXT" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="26" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+        <Component class="javax.swing.JRadioButton" name="T1">
           <Properties>
             <Property name="text" type="java.lang.String" value="TRUE"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+        <Component class="javax.swing.JRadioButton" name="F1">
           <Properties>
             <Property name="text" type="java.lang.String" value="FALSE"/>
           </Properties>
@@ -204,12 +204,12 @@
             <Property name="text" type="java.lang.String" value="1. Jos&#xe9; Rizal wrote Noli Me Tangere and El Filibusterismo. "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+        <Component class="javax.swing.JRadioButton" name="T2">
           <Properties>
             <Property name="text" type="java.lang.String" value="TRUE"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton4">
+        <Component class="javax.swing.JRadioButton" name="F2">
           <Properties>
             <Property name="text" type="java.lang.String" value="FALSE"/>
           </Properties>
@@ -222,12 +222,12 @@
             <Property name="text" type="java.lang.String" value="2. Crisostomo Ibarra is the main character in El Filibusterismo. "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton5">
+        <Component class="javax.swing.JRadioButton" name="T3">
           <Properties>
             <Property name="text" type="java.lang.String" value="TRUE"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton6">
+        <Component class="javax.swing.JRadioButton" name="F3">
           <Properties>
             <Property name="text" type="java.lang.String" value="FALSE"/>
           </Properties>
@@ -240,12 +240,12 @@
             <Property name="text" type="java.lang.String" value="3. El Filibusterismo was written before Noli Me Tangere. "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton7">
+        <Component class="javax.swing.JRadioButton" name="T4">
           <Properties>
             <Property name="text" type="java.lang.String" value="TRUE"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton8">
+        <Component class="javax.swing.JRadioButton" name="F4">
           <Properties>
             <Property name="text" type="java.lang.String" value="FALSE"/>
           </Properties>
@@ -258,12 +258,12 @@
             <Property name="text" type="java.lang.String" value="4. Maria Clara is Crisostomo Ibarra&apos;s mother. "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton9">
+        <Component class="javax.swing.JRadioButton" name="T5">
           <Properties>
             <Property name="text" type="java.lang.String" value="TRUE"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jRadioButton10">
+        <Component class="javax.swing.JRadioButton" name="F5">
           <Properties>
             <Property name="text" type="java.lang.String" value="FALSE"/>
           </Properties>
@@ -276,10 +276,13 @@
             <Property name="text" type="java.lang.String" value="5. Both Noli Me Tangere and El Filibusterismo talk about the Spanish colonization in the Philippines. "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="NEXT">
           <Properties>
             <Property name="text" type="java.lang.String" value="NEXT"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NEXTActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

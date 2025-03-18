@@ -8,13 +8,11 @@ package javaapp;
  *
  * @author sailo
  */
-public class multichoice extends javax.swing.JFrame {
-public static int multiSCORE = 0;
-public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q4correct = false, Q5correct = false;
+public class multichoiceANSWERS extends javax.swing.JFrame {
     /**
      * Creates new form multiplication
      */
-    public multichoice() {
+    public multichoiceANSWERS() {
         initComponents();
         setResizable(false);
         buttonGroup1.add(A1);
@@ -37,6 +35,22 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
         buttonGroup5.add(B5);
         buttonGroup5.add(C5);
         buttonGroup5.add(D5);
+        
+        if (multichoice.Q1correct == false) { // A
+            correctANS1.setText("Correct Answer");
+        }
+        if (multichoice.Q2correct == false) { // C
+            correctANS2.setText("Correct Answer");
+        }
+        if (multichoice.Q3correct == false) { // B
+            correctANS3.setText("Correct Answer");
+        }
+        if (multichoice.Q4correct == false) { // C
+            correctANS4.setText("Correct Answer");
+        }
+        if (multichoice.Q5correct == false) { // A
+            correctANS5.setText("Correct Answer");
+        }
     }
 
     /**
@@ -83,6 +97,11 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
         C5 = new javax.swing.JRadioButton();
         jLabel8 = new javax.swing.JLabel();
         nextbuttonMC = new javax.swing.JButton();
+        correctANS1 = new javax.swing.JTextField();
+        correctANS2 = new javax.swing.JTextField();
+        correctANS3 = new javax.swing.JTextField();
+        correctANS5 = new javax.swing.JTextField();
+        correctANS4 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -90,19 +109,29 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         B1.setText("b) The botanical garden");
-        jPanel1.add(B1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 410, -1));
+        B1.setEnabled(false);
+        B1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(B1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 430, -1));
 
         D5.setText("d) It represented the eternal suffering of the Filipino people");
-        jPanel1.add(D5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 700, 530, -1));
+        D5.setEnabled(false);
+        jPanel1.add(D5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 700, 570, -1));
 
         C1.setText("c) The lamp of Maria Clara");
-        jPanel1.add(C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 560, -1));
+        C1.setEnabled(false);
+        jPanel1.add(C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 400, -1));
 
         A5.setText("a) It symbolized the broken justice system of the Philippines");
-        jPanel1.add(A5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 640, 550, -1));
+        A5.setEnabled(false);
+        jPanel1.add(A5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 640, 380, -1));
 
         D1.setText("d) The schoolhouse in San Diego");
-        jPanel1.add(D1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 340, -1));
+        D1.setEnabled(false);
+        jPanel1.add(D1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 290, -1));
 
         jLabel4.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(108, 82, 75));
@@ -110,25 +139,32 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 417, -1));
 
         B2.setText("b) Salvi believed he should have been assigned to a higher position");
-        jPanel1.add(B2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 740, -1));
+        B2.setEnabled(false);
+        jPanel1.add(B2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 610, -1));
 
         C2.setText("c) Salvi was jealous of Damaso’s past relationship with Maria Clara’s mother");
-        jPanel1.add(C2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 810, -1));
+        C2.setEnabled(false);
+        jPanel1.add(C2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 460, -1));
 
         D2.setText("d) Salvi saw Damaso as a threat to his own control over San Diego");
-        jPanel1.add(D2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 710, -1));
+        D2.setEnabled(false);
+        jPanel1.add(D2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 650, -1));
 
         A2.setText("a) Damaso was wealthier and more influential");
-        jPanel1.add(A2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 560, -1));
+        A2.setEnabled(false);
+        jPanel1.add(A2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 480, -1));
 
         B3.setText("b) The suffering of Filipino mothers under colonial rule");
-        jPanel1.add(B3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 690, -1));
+        B3.setEnabled(false);
+        jPanel1.add(B3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 340, -1));
 
         C3.setText("c) The indifference of the Spanish government towards education");
-        jPanel1.add(C3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 680, -1));
+        C3.setEnabled(false);
+        jPanel1.add(C3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 660, -1));
 
         D3.setText("d) The fragility of the elite class in times of crisis");
-        jPanel1.add(D3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 600, -1));
+        D3.setEnabled(false);
+        jPanel1.add(D3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 540, -1));
 
         jLabel5.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(108, 82, 75));
@@ -151,10 +187,12 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 200, -1));
 
         B4.setText("b) He wanted to die for the revolution");
-        jPanel1.add(B4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, 520, -1));
+        B4.setEnabled(false);
+        jPanel1.add(B4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, 260, -1));
 
         C4.setText("c) He believed his bloodline was cursed and unworthy of a future");
-        jPanel1.add(C4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, 590, -1));
+        C4.setEnabled(false);
+        jPanel1.add(C4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, 390, -1));
 
         jLabel3.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(108, 82, 75));
@@ -162,18 +200,21 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 724, -1));
 
         D4.setText("d) He feared he would betray Ibarra under torture");
-        jPanel1.add(D4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, 570, -1));
+        D4.setEnabled(false);
+        jPanel1.add(D4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, 500, -1));
 
         A4.setText("a) He no longer believed in Ibarra’s cause");
-        jPanel1.add(A4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 660, -1));
+        A4.setEnabled(false);
+        jPanel1.add(A4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 650, -1));
 
         A3.setText("a) The spiritual corruption of the clergy");
+        A3.setEnabled(false);
         A3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 A3ActionPerformed(evt);
             }
         });
-        jPanel1.add(A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 650, -1));
+        jPanel1.add(A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 550, -1));
 
         jLabel7.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(108, 82, 75));
@@ -181,18 +222,21 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, 577, -1));
 
         B5.setText("b) It foreshadowed Ibarra’s eventual fate as an outcast");
-        jPanel1.add(B5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 660, 550, -1));
+        B5.setEnabled(false);
+        jPanel1.add(B5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 660, 540, -1));
 
         A1.setText("a) The crocodile in the river");
+        A1.setEnabled(false);
         A1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 A1ActionPerformed(evt);
             }
         });
-        jPanel1.add(A1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 500, -1));
+        jPanel1.add(A1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 210, -1));
 
         C5.setText("c) It was a secret burial ground for those executed by the church");
-        jPanel1.add(C5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 680, 550, -1));
+        C5.setEnabled(false);
+        jPanel1.add(C5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 680, 660, -1));
 
         jLabel8.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(108, 82, 75));
@@ -201,7 +245,7 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
 
         nextbuttonMC.setBackground(new java.awt.Color(108, 82, 75));
         nextbuttonMC.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        nextbuttonMC.setText("NEXT");
+        nextbuttonMC.setText("CLOSE");
         nextbuttonMC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nextbuttonMCActionPerformed(evt);
@@ -209,17 +253,73 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
         });
         jPanel1.add(nextbuttonMC, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 730, -1, -1));
 
+        correctANS1.setBackground(new java.awt.Color(251, 240, 229));
+        correctANS1.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        correctANS1.setForeground(new java.awt.Color(47, 110, 31));
+        correctANS1.setBorder(null);
+        correctANS1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                correctANS1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(correctANS1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, -1, -1));
+
+        correctANS2.setBackground(new java.awt.Color(251, 240, 229));
+        correctANS2.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        correctANS2.setForeground(new java.awt.Color(47, 110, 31));
+        correctANS2.setBorder(null);
+        correctANS2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                correctANS2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(correctANS2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, -1, -1));
+
+        correctANS3.setBackground(new java.awt.Color(251, 240, 229));
+        correctANS3.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        correctANS3.setForeground(new java.awt.Color(47, 110, 31));
+        correctANS3.setBorder(null);
+        correctANS3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                correctANS3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(correctANS3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 400, -1, -1));
+
+        correctANS5.setBackground(new java.awt.Color(251, 240, 229));
+        correctANS5.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        correctANS5.setForeground(new java.awt.Color(47, 110, 31));
+        correctANS5.setBorder(null);
+        correctANS5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                correctANS5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(correctANS5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 640, -1, -1));
+
+        correctANS4.setBackground(new java.awt.Color(251, 240, 229));
+        correctANS4.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        correctANS4.setForeground(new java.awt.Color(47, 110, 31));
+        correctANS4.setBorder(null);
+        correctANS4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                correctANS4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(correctANS4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 550, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 954, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 809, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -230,36 +330,43 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
 
     private void A3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A3ActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_A3ActionPerformed
 
     private void A1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A1ActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_A1ActionPerformed
 
     private void nextbuttonMCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextbuttonMCActionPerformed
-        if (A1.isSelected()) {
-            ++multiSCORE;
-            Q1correct = true;
-        }
-        if (C2.isSelected()) {
-            ++multiSCORE;
-            Q2correct = true;
-        }
-        if (B3.isSelected()) {
-            ++multiSCORE;
-           Q3correct = true;
-        }
-        if (C4.isSelected()) {
-            ++multiSCORE;
-            Q4correct = true;
-        }
-        if (A5.isSelected()) {
-            ++multiSCORE;
-            Q5correct = true;
-        }
-        new trueorfalse().setVisible(true);
+        new resulta().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_nextbuttonMCActionPerformed
+
+    private void correctANS1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correctANS1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_correctANS1ActionPerformed
+
+    private void correctANS2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correctANS2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_correctANS2ActionPerformed
+
+    private void correctANS3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correctANS3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_correctANS3ActionPerformed
+
+    private void correctANS5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correctANS5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_correctANS5ActionPerformed
+
+    private void correctANS4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correctANS4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_correctANS4ActionPerformed
+
+    private void B1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B1ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_B1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -278,14 +385,18 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(multichoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(multichoiceANSWERS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(multichoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(multichoiceANSWERS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(multichoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(multichoiceANSWERS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(multichoice.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(multichoiceANSWERS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -294,7 +405,7 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new multichoice().setVisible(true);
+                new multichoiceANSWERS().setVisible(true);
             }
         });
     }
@@ -325,6 +436,11 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
     private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.ButtonGroup buttonGroup4;
     private javax.swing.ButtonGroup buttonGroup5;
+    private javax.swing.JTextField correctANS1;
+    private javax.swing.JTextField correctANS2;
+    private javax.swing.JTextField correctANS3;
+    private javax.swing.JTextField correctANS4;
+    private javax.swing.JTextField correctANS5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -11,6 +11,7 @@ package javaapp;
 public class multichoice extends javax.swing.JFrame {
 public static int multiSCORE = 0;
 public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q4correct = false, Q5correct = false;
+public static boolean B1s = false, C1s = false, D1s = false, B2s = false, A2s = false, D2s = false, A3s = false, C3s = false, D3s = false, B4s = false, A4s = false, D4s = false, B5s = false, C5s = false, D5s = false; 
     /**
      * Creates new form multiplication
      */
@@ -240,24 +241,59 @@ public static boolean Q1correct = false, Q2correct = false, Q3correct = false, Q
         if (A1.isSelected()) {
             ++multiSCORE;
             Q1correct = true;
+        } else if (B1.isSelected()) {
+            B1s = true;
+        } else if (C1.isSelected()) {
+            C1s = true;
+        } else if (D1.isSelected()) {
+            D1s = true;
         }
+        
         if (C2.isSelected()) {
             ++multiSCORE;
             Q2correct = true;
+        } else if (A2.isSelected()) {
+            A2s = true;
+        } else if (B2.isSelected()) {
+            B2s = true;
+        } else if (D2.isSelected()) {
+            D2s = true;
         }
+        
         if (B3.isSelected()) {
             ++multiSCORE;
            Q3correct = true;
+        } else if (A3.isSelected()) {
+            A3s = true;
+        } else if (C3.isSelected()) {
+            C3s = true;
+        } else if (D3.isSelected()) {
+            D3s = true;
         }
+        
         if (C4.isSelected()) {
             ++multiSCORE;
             Q4correct = true;
+        } else if (A4.isSelected()) {
+            A4s = true;
+        } else if (B4.isSelected()) {
+            B4s = true;
+        } else if (D4.isSelected()) {
+            D4s = true;
         }
+        
         if (A5.isSelected()) {
             ++multiSCORE;
             Q5correct = true;
+        } else if (C5.isSelected()) {
+            C5s = true;
+        } else if (B5.isSelected()) {
+            B5s = true;
+        } else if (D5.isSelected()) {
+            D5s = true;
         }
-        new trueorfalse().setVisible(true);
+        
+        new multichoiceANSWERS().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_nextbuttonMCActionPerformed
 

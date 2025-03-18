@@ -38,18 +38,72 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
         
         if (multichoice.Q1correct == false) { // A
             correctANS1.setText("Correct Answer");
+        } else if (multichoice.Q1correct == true) {
+            correctshower1.setText("CORRECT");
+            A1.setSelected(true);
         }
+        if (multichoice.C1s == true) {
+            C1.setSelected(true);
+        } else if (multichoice.B1s == true) {
+            B1.setSelected(true);
+        } else if (multichoice.D1s == true) {
+            D1.setSelected(true);
+        }
+            
         if (multichoice.Q2correct == false) { // C
             correctANS2.setText("Correct Answer");
+        } else if (multichoice.Q2correct == true) {
+            correctshower2.setText("CORRECT");
+            C2.setSelected(true);
         }
+        if (multichoice.B2s == true) {
+            B2.setSelected(true);
+        } else if (multichoice.A2s == true) {
+            A2.setSelected(true);
+        } else if (multichoice.D2s == true) {
+            D2.setSelected(true);
+        }
+        
         if (multichoice.Q3correct == false) { // B
             correctANS3.setText("Correct Answer");
+        } else if (multichoice.Q3correct == true) {
+            correctshower3.setText("CORRECT");
+            B3.setSelected(true);
         }
+        if (multichoice.C3s == true) {
+            B3.setSelected(true);
+        } else if (multichoice.A3s == true) {
+            A3.setSelected(true);
+        } else if (multichoice.D3s == true) {
+            D3.setSelected(true);
+        }
+        
         if (multichoice.Q4correct == false) { // C
             correctANS4.setText("Correct Answer");
+        } else if (multichoice.Q4correct == true) {
+            correctshower4.setText("CORRECT");
+            C4.setSelected(true);
         }
+        if (multichoice.B4s == true) {
+            B4.setSelected(true);
+        } else if (multichoice.A4s == true) {
+            A4.setSelected(true);
+        } else if (multichoice.D4s == true) {
+            D4.setSelected(true);
+        }
+        
         if (multichoice.Q5correct == false) { // A
             correctANS5.setText("Correct Answer");
+        } else if (multichoice.Q5correct == true) {
+            correctshower5.setText("CORRECT");
+            A5.setSelected(true);
+        }
+        if (multichoice.B5s == true) {
+            B5.setSelected(true);
+        } else if (multichoice.C5s == true) {
+            A5.setSelected(true);
+        } else if (multichoice.D5s == true) {
+            D5.setSelected(true);
         }
     }
 
@@ -102,6 +156,11 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
         correctANS3 = new javax.swing.JTextField();
         correctANS5 = new javax.swing.JTextField();
         correctANS4 = new javax.swing.JTextField();
+        correctshower1 = new javax.swing.JTextField();
+        correctshower2 = new javax.swing.JTextField();
+        correctshower3 = new javax.swing.JTextField();
+        correctshower4 = new javax.swing.JTextField();
+        correctshower5 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -115,7 +174,7 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
                 B1ActionPerformed(evt);
             }
         });
-        jPanel1.add(B1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 430, -1));
+        jPanel1.add(B1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 210, -1));
 
         D5.setText("d) It represented the eternal suffering of the Filipino people");
         D5.setEnabled(false);
@@ -241,11 +300,11 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(108, 82, 75));
         jLabel8.setText("people under Spanish rule?");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 724, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 724, -1));
 
         nextbuttonMC.setBackground(new java.awt.Color(108, 82, 75));
         nextbuttonMC.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
-        nextbuttonMC.setText("CLOSE");
+        nextbuttonMC.setText(" NEXT");
         nextbuttonMC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nextbuttonMCActionPerformed(evt);
@@ -308,6 +367,62 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
         });
         jPanel1.add(correctANS4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 550, -1, -1));
 
+        correctshower1.setEditable(false);
+        correctshower1.setBackground(new java.awt.Color(251, 240, 229));
+        correctshower1.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        correctshower1.setForeground(new java.awt.Color(47, 110, 31));
+        correctshower1.setBorder(null);
+        correctshower1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                correctshower1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(correctshower1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, -1, -1));
+
+        correctshower2.setBackground(new java.awt.Color(251, 240, 229));
+        correctshower2.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        correctshower2.setForeground(new java.awt.Color(47, 110, 31));
+        correctshower2.setBorder(null);
+        correctshower2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                correctshower2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(correctshower2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 220, -1, -1));
+
+        correctshower3.setBackground(new java.awt.Color(251, 240, 229));
+        correctshower3.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        correctshower3.setForeground(new java.awt.Color(47, 110, 31));
+        correctshower3.setBorder(null);
+        correctshower3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                correctshower3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(correctshower3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 350, -1, 20));
+
+        correctshower4.setBackground(new java.awt.Color(251, 240, 229));
+        correctshower4.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        correctshower4.setForeground(new java.awt.Color(47, 110, 31));
+        correctshower4.setBorder(null);
+        correctshower4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                correctshower4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(correctshower4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 480, -1, -1));
+
+        correctshower5.setBackground(new java.awt.Color(251, 240, 229));
+        correctshower5.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
+        correctshower5.setForeground(new java.awt.Color(47, 110, 31));
+        correctshower5.setBorder(null);
+        correctshower5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                correctshower5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(correctshower5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 610, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -330,7 +445,6 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
 
     private void A3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A3ActionPerformed
         // TODO add your handling code here:
-        
     }//GEN-LAST:event_A3ActionPerformed
 
     private void A1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A1ActionPerformed
@@ -339,7 +453,7 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
     }//GEN-LAST:event_A1ActionPerformed
 
     private void nextbuttonMCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextbuttonMCActionPerformed
-        new resulta().setVisible(true);
+        new trueorfalse().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_nextbuttonMCActionPerformed
 
@@ -367,6 +481,26 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
         // TODO add your handling code here:
         
     }//GEN-LAST:event_B1ActionPerformed
+
+    private void correctshower1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correctshower1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_correctshower1ActionPerformed
+
+    private void correctshower2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correctshower2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_correctshower2ActionPerformed
+
+    private void correctshower3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correctshower3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_correctshower3ActionPerformed
+
+    private void correctshower4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correctshower4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_correctshower4ActionPerformed
+
+    private void correctshower5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_correctshower5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_correctshower5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -441,6 +575,11 @@ public class multichoiceANSWERS extends javax.swing.JFrame {
     private javax.swing.JTextField correctANS3;
     private javax.swing.JTextField correctANS4;
     private javax.swing.JTextField correctANS5;
+    private javax.swing.JTextField correctshower1;
+    private javax.swing.JTextField correctshower2;
+    private javax.swing.JTextField correctshower3;
+    private javax.swing.JTextField correctshower4;
+    private javax.swing.JTextField correctshower5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

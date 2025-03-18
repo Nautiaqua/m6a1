@@ -15,6 +15,7 @@ public static int multiSCORE = 0;
      */
     public multichoice() {
         initComponents();
+        setResizable(false);
         buttonGroup1.add(A1);
         buttonGroup1.add(B1);
         buttonGroup1.add(C1);
@@ -205,7 +206,7 @@ public static int multiSCORE = 0;
                 nextbuttonMCActionPerformed(evt);
             }
         });
-        jPanel1.add(nextbuttonMC, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 740, -1, -1));
+        jPanel1.add(nextbuttonMC, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 730, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -215,10 +216,13 @@ public static int multiSCORE = 0;
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 796, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 809, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        pack();
+        setSize(new java.awt.Dimension(689, 817));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void A3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A3ActionPerformed
@@ -240,7 +244,8 @@ public static int multiSCORE = 0;
             ++multiSCORE;
         if (A5.isSelected())
             ++multiSCORE;
-        new resulta().setVisible(true);
+        new trueorfalse().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_nextbuttonMCActionPerformed
 
     /**

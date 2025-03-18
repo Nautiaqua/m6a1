@@ -67,32 +67,38 @@ public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(108, 82, 75));
         jLabel1.setText("TRUE OR FALSE");
 
+        jLabel3.setFont(new java.awt.Font("Ebrima", 0, 14)); // NOI18N
         jLabel3.setText("Check True if the sentence is correct and if it is False");
 
+        jLabel4.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel4.setText("1. José Rizal wrote Noli Me Tangere and El Filibusterismo. ");
 
         jRadioButton3.setText("TRUE");
 
         jRadioButton4.setText("FALSE");
 
+        jLabel5.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel5.setText("2. Crisostomo Ibarra is the main character in El Filibusterismo. ");
 
         jRadioButton5.setText("TRUE");
 
         jRadioButton6.setText("FALSE");
 
+        jLabel6.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel6.setText("3. El Filibusterismo was written before Noli Me Tangere. ");
 
         jRadioButton7.setText("TRUE");
 
         jRadioButton8.setText("FALSE");
 
+        jLabel7.setFont(new java.awt.Font("Ebrima", 1, 14)); // NOI18N
         jLabel7.setText("4. Maria Clara is Crisostomo Ibarra's mother. ");
 
         jRadioButton9.setText("TRUE");
 
         jRadioButton10.setText("FALSE");
 
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel8.setText("5. Both Noli Me Tangere and El Filibusterismo talk about the Spanish colonization in the Philippines. ");
 
         jButton1.setText("NEXT");
@@ -102,9 +108,8 @@ public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(26, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
@@ -133,7 +138,6 @@ public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
                         .addComponent(jRadioButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel8)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
                         .addComponent(jRadioButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -142,7 +146,9 @@ public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
                         .addComponent(jRadioButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(222, 222, 222)
-                        .addComponent(jButton1)))
+                        .addComponent(jButton1))
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 392, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 611, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
@@ -188,10 +194,10 @@ public class TRUEFALSENOLIANDELFILI extends javax.swing.JFrame {
                 .addComponent(jRadioButton10)
                 .addGap(107, 107, 107)
                 .addComponent(jButton1)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 620));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 620));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
